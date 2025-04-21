@@ -24,3 +24,4 @@ def lancer_scraping(n_pages: int = 1):
     with open(DATA_FILE, "w", encoding="utf-8") as f:
         json.dump(annonces, f, indent=4, ensure_ascii=False)
     return {"message": f"{len(annonces)} annonces extraites et sauvegardées avec succès."}
+
